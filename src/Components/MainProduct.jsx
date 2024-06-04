@@ -16,9 +16,11 @@ const MainProduct = ({store2,setStore2}) => {
     setStock(stock+1)
   }
   const minus=()=>{
-
+   if(stock===1){return}
+   else{
     setStock(stock-1)
-  }
+ }
+ }
   return (
     <>
       <div className='relative '>
